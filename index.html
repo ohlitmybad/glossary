@@ -1,0 +1,425 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="shortcut icon" type="image/x-icon" href="https://datamb.football/favicon.ico">
+  <title translate="no">DataMB | Glossary</title>
+  <meta property="og:image" content="https://i.imgur.com/UurMbGS.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@DataMB_">
+  <meta name="twitter:title" content="DataMB | Compare Strikers">
+  <meta name="twitter:description" content="Definitions of the metrics used in DataMB radars">
+  <meta name="twitter:image" content="https://i.imgur.com/UurMbGS.png">
+
+  <title>DataMB | Glossary</title>
+
+  <style>
+
+footer a,
+    h2 a {
+      color: black;
+      text-decoration: none;
+    }
+
+.footer {
+  font-family: system-ui;
+  background: #bcbcbc;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .description {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.footer .info {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.footer .divider {
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin: 25px 0;
+  opacity: 0.2;
+}
+
+.footer .sub-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .sub-footer .terms,
+.footer .sub-footer .privacy,
+.footer .sub-footer .glossary {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-body {
+  width: 80px !important;
+  height: 80px !important;
+  position: absolute;
+  top: 16px;
+  z-index: 40000;
+  left: 17px;
+  opacity: 0.8;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap; /* Add flex-wrap property to wrap the content on smaller screens */
+}
+
+.google-play-container {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: flex-end; /* Align items to the right */
+  margin-top: -20px; /* Adjust the margin-top to remove the space */
+}
+
+.google-play-container img {
+  width: 162px;
+  height: 62px;
+}
+
+.description,
+.info,
+.divider,
+.sub-footer {
+  flex-basis: 100%;
+}
+
+.footer p {
+  margin-bottom: 0; /* Remove bottom margin from the paragraph elements */
+}
+	        
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F5F5F5;
+      padding: 20px;
+      margin: 0;
+    }
+
+
+
+    h1 {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 30px;
+      font-family: 'Tahoma', cursive, sans-serif;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .metric {
+      background-color: #FFFFFF;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .metric-title {
+      font-weight: bold;
+      margin-top: 5px;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .metric-definition {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .warning {
+      background-color: #FFD700;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+
+
+    
+  </style>
+
+</head>
+<body>
+ <a href="http://datamb.football">
+    <img src="https://i.imgur.com/UurMbGS.png" alt="Logo" class="logo-body">
+  </a>
+
+  <h1>Radar Metrics Glossary</h1>
+
+  <div class="warning">
+    <p><strong>Percentiles :</strong> All the statistics below are then converted into percentiles for the corresponding position sample.</p>
+  </div>
+
+  <h2 style="font-size: 28px;"><a href="http://datamb.football/keepers/">Goalkeepers</a></h2>
+  <div class="metric">
+    <h3 class="metric-title">Defensive Actions<em>, per 90</em></h3>
+    <p class="metric-definition">Sum of sweeping actions such as interceptions, tackles and ground duels with opposing players; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Aerials Contested<em>, per 90</em></h3>
+    <p class="metric-definition">The number of aerial duels in which the goalkeeper participates; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Exits<em>, per 90</em></h3>
+    <p class="metric-definition">The amount of times the keeper leaves his line (whether to claim a cross or to sweep); normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Passes<em>, per 90</em></h3>
+    <p class="metric-definition">The number of passes attempted by the goalkeeper; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Long Pass<em>, %</em></h3>
+    <p class="metric-definition">The percentage of long passes successfully completed by the goalkeeper.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Short Pass<em>, %</em></h3>
+    <p class="metric-definition">The percentage of short and medium passes successfully completed by the goalkeeper.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">PSxG - GA<em>, per 90</em></h3>
+    <p class="metric-definition">The difference between the post-shot expected goals (PSxG) prevented by the goalkeeper and the goals conceded (GA); normalized per 90 minutes.</p>
+  </div>
+
+  <h2 style="font-size: 28px;"><a href="http://datamb.football/centrebacks/">Centre-backs</a></h2>
+  <div class="metric">
+    <h3 class="metric-title">Passes Completed<em>, per 90</em></h3>
+    <p class="metric-definition">The number of passes successfully completed by a centre-back; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Forward Pass<em>, %</em></h3>
+    <p class="metric-definition">Pass completion (completed/attempted), excluding backwards and sideways passes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Progressive Passes<em>, per 90</em></h3>
+    <p class="metric-definition">Completed passes that help the team significantly advance towards the opponent's goal; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Defensive Actions<em>, per 90</em></h3>
+    <p class="metric-definition">Sum of tackles, interceptions and ground duels won; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Defensive Duel<em>, %</em></h3>
+    <p class="metric-definition">The percentage of defensive duels won by a centre-back.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Aerial<em>, %</em></h3>
+    <p class="metric-definition">The percentage of aerial duels won by a centre-back.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Progressive Carries<em>, per 90</em></h3>
+    <p class="metric-definition">Runs with the ball that significantly advance the team's position; normalized per 90 minutes.</p>
+  </div>
+
+  <h2 style="font-size: 28px;"><a href="http://datamb.football/fullbacks/">Full-backs</a></h2>
+  <div class="metric">
+    <h3 class="metric-title">Cross Accuracy<em>, %</em></h3>
+    <p class="metric-definition">The percentage of crosses successfully delivered by a full-back.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Expected Assists<em>, per 90</em></h3>
+    <p class="metric-definition">The number of assists expected from a full-back based on the quality of their deliveries and the positions of teammates; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Progressive Passes<em>, per 90</em></h3>
+  <p class="metric-definition">Completed passes that help the team significantly advance towards the opponent's goal; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Defensive Actions<em>, per 90</em></h3>
+    <p class="metric-definition">Sum of tackles, interceptions and ground duels won; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Defensive Duel<em>, %</em></h3>
+    <p class="metric-definition">The percentage of defensive duels won by a full-back.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Aerial<em>, %</em></h3>
+    <p class="metric-definition">The percentage of aerial duels won by a full-back.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Progressive Carries<em>, per 90</em></h3>
+    <p class="metric-definition">Runs with the ball that significantly advance the team's position; normalized per 90 minutes.</p>
+  </div>
+
+  <h2 style="font-size: 28px;"><a href="http://datamb.football/midfielders/">Midfielders</a></h2>
+  <div class="metric">
+    <h3 class="metric-title">Duels won<em>, %</em></h3>
+    <p class="metric-definition">The percentage of duels won by a midfielder.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Defensive Actions<em>, per 90</em></h3>
+    <p class="metric-definition">Sum of tackles, interceptions and ground duels won; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Progressive Carries<em>, per 90</em></h3>
+     <p class="metric-definition">Runs with the ball that significantly advance the team's position; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+      <h3 class="metric-title">Forward Passes<em>, per 90</em></h3>
+    <p class="metric-definition">The number of passes attempted by a midfielder, excluding backwards and sideways passes; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Forward Pass<em>, %</em></h3>
+    <p class="metric-definition">Pass completion (completed/attempted), excluding backwards and sideways passes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Key Passes<em>, per 90</em></h3>
+    <p class="metric-definition">Passes that directly lead to a goal-scoring opportunity; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Progressive Passes<em>, per 90</em></h3>
+ <p class="metric-definition">Completed passes that help the team significantly advance towards the opponent's goal; normalized per 90 minutes.</p>
+  </div>
+
+  <h2 style="font-size: 28px;"><a href="http://datamb.football/wingers/">Wingers</a></h2>
+  <div class="metric">
+    <h3 class="metric-title">Progressive Carries<em>, per 90</em></h3>
+     <p class="metric-definition">Runs with the ball that significantly advance the team's position; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Successful Dribbles<em>, per 90</em></h3>
+    <p class="metric-definition">The number of dribbles successfully completed by a winger; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Non-Penalty Goals<em>, per 90</em></h3>
+    <p class="metric-definition">The number of goals scored by a winger excluding penalty kicks; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">xG + xA<em>, per 90</em></h3>
+    <p class="metric-definition">The sum of expected goals (xG) and expected assists (xA) for a winger; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Assists<em>, per 90</em></h3>
+    <p class="metric-definition">The number of goals directly assisted by a winger; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Key Passes<em>, per 90</em></h3>
+    <p class="metric-definition">Passes that directly lead to a goal-scoring opportunity; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Offensive Actions<em>, per 90</em></h3>
+    <p class="metric-definition">Sum of shots, crosses and dribbles; normalized per 90 minutes.</p>
+  </div>
+
+  <h2 style="font-size: 28px;"><a href="http://datamb.football/strikers/">Strikers</a></h2>
+  <div class="metric">
+    <h3 class="metric-title">Passes Received<em>, per 90</em></h3>
+    <p class="metric-definition">The number of passes received by a striker from his team-mates; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Aerial<em>, %</em></h3>
+    <p class="metric-definition">The percentage of aerial duels won by a striker.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Non-Penalty Goals<em>, per 90</em></h3>
+    <p class="metric-definition">The number of goals scored by a striker excluding penalty kicks; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Expected Goals<em>, per 90</em></h3>
+    <p class="metric-definition">The number of goals expected from a striker based on the quality of their chances; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Passes to Penalty Area<em>, per 90</em></h3>
+    <p class="metric-definition">The number of passes delivered by a striker into the opponent's penalty area; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Expected Assists<em>, per 90</em></h3>
+    <p class="metric-definition">The number of assists expected from a striker based on the quality of their chance creation and the positions of teammates; normalized per 90 minutes.</p>
+  </div>
+
+  <div class="metric">
+    <h3 class="metric-title">Offensive Actions<em>, per 90</em></h3>
+    <p class="metric-definition">Sum of shots, crosses and dribbles; normalized per 90 minutes.</p>
+  </div>
+
+   <footer class="footer">
+   
+    <div class="google-play-container">
+
+    <a href='https://play.google.com/store/apps/details?id=com.datamb.datamb.webviewflutter&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'></a>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#000000', 'I2I6L8U18');kofiwidget2.draw();</script> </div>
+ <div class="logo">
+      <img src="https://i.imgur.com/UurMbGS.png" alt="Footer Logo" />
+    </div>
+
+    <p class="description">DataMB</p>
+    <p class="info">© All Rights Reserved</p>
+    <hr class="divider" />
+    <div class="sub-footer">
+      <nav>
+        <a class="terms" target="_blank" href="https://datamb.football/privacy">Privacy</a>
+        <a class="privacy" target="_blank" href="mailto:datamb.football@gmail.com">Contact</a>
+      </nav>
+      <nav>
+        <a target="_blank" href="https://twitter.com/datamb_">
+          <svg width="23" height="22" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.315 3.95c-.882.432-1.747.608-2.647.873-.99-1.116-2.456-1.177-3.865-.65-1.409.528-2.332 1.818-2.312 3.298v.882c-2.863.073-5.413-1.231-7.058-3.53 0 0-3.69 6.559 3.53 9.706-1.653 1.1-3.3 1.843-5.295 1.765 2.919 1.59 6.1 2.138 8.854 1.339 3.158-.918 5.754-3.285 6.75-6.832.298-1.078.445-2.192.439-3.311-.002-.22 1.332-2.446 1.604-3.54Z" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
