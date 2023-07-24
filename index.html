@@ -3,6 +3,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +14,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@DataMB_">
   <meta name="twitter:title" content="DataMB | Glossary">
-  <meta name="twitter:description" content="Definitions of the metrics used in DataMB radars">
+  <meta name="twitter:description" content="Definitions of the metrics and methodology used by DataMB">
   <meta name="twitter:image" content="https://i.imgur.com/UurMbGS.png">
 
   <title>DataMB | Glossary</title>
@@ -119,7 +120,7 @@ footer a,
 
     h1 {
       text-align: center;
-      font-size: 50px;
+      font-size: 42px;
       margin-bottom: 30px;
       font-family: Arial, sans-serif;
     }
@@ -149,10 +150,42 @@ footer a,
     }
 
     .warning {
-      background-color: #FFD700;
-      padding: 10px;
-      margin-bottom: 20px;
+border: 1.5px solid #F822C6;
+Border-radius: 10px;
+      padding: 5px;
+      margin-bottom: 14px;
+Font-size: 13px;
+  line-height: 1.5; /* Adjust the value to increase or decrease the vertical spacing */
+
+
     }
+
+    .warning2 {
+      padding: 5px;
+      margin-bottom: 30px;
+Font-size: 13px;
+      background-color: #FFD700;
+
+    }
+
+
+    .warning3 {
+      padding: 5px;
+      margin-bottom: 40px;
+Font-size: 13px;
+border: 1.5px solid #4330FB;
+Border-radius: 10px;
+  line-height: 1.5; /* Adjust the value to increase or decrease the vertical spacing */
+
+    }
+
+   .warning4 {
+Font-size: 30px;
+
+    }
+
+
+
 
 
 .footer {
@@ -294,6 +327,21 @@ header a {
   fill: #bcbcbc;
 }
 
+.centered-pink-text {
+  text-align: center;
+  color: #F822C6;
+Font-size: 19px;
+Margin-top: 0px;
+}
+
+.centered-purple-text {
+  text-align: center;
+  color: #4330FB;
+Font-size: 19px;
+Margin-top: 0px;
+
+}
+
 
 
     
@@ -332,13 +380,40 @@ header a {
 <body>
  
 
-  <h1>Glossary</h1>
+  <h1>Methodology & Glossary</h1>
 
-  <div class="warning">
-    <p><strong>Percentiles :</strong> All the statistics below are then converted into percentiles for the corresponding position sample.</p>
+ 
+
+
+
+  <div class="warning2">
+  <p><strong>Percentiles :</strong> Radar data is first converted into percentiles for the corresponding position sample.</p>  </div>
+
+<div class="warning">
+<p class="centered-pink-text">Radars</p>
+• Accurate as of 13/06/2023.<br>
+• 2022/23 season, all competitions (club and country)<br>
+• Top 9 European Leagues, Top 2 South-American Leagues, Championship, 1000+ min.<br>
+• Search with last name first, it will find 'haaland' but not 'erling'. <br>
+• Enter 'average' to show the "average" player. <br>
+• Click on a similar player to show his radar.</p>
   </div>
 
-  <h2 style="font-size: 28px;"><a href="http://datamb.football/keepers/">Goalkeepers</a></h2>
+<div class="warning3">
+<p class="centered-purple-text">Plots</p>
+• Accurate as of 13/06/2023.<br>
+• Top 7-Leagues, 2022/23 season, all competitions (club and country).<br>
+• Click on a position to generate scatter plots. <br>
+• Click on circle to show player name. <br>
+• Once you've selected a league, the search bar will not work for other leagues unless you refresh.
+</p>
+  </div>
+
+<div class="warning4">
+ RADAR METRICS
+  </div>
+
+  <h2 style="font-size: 24px;"><a href="http://datamb.football/radars/">Goalkeepers</a></h2>
   <div class="metric">
     <h3 class="metric-title">Defensive Actions<em>, per 90</em></h3>
     <p class="metric-definition">Sum of sweeping actions such as interceptions, tackles and ground duels with opposing players; normalized per 90 minutes.</p>
@@ -374,7 +449,7 @@ header a {
     <p class="metric-definition">The difference between the post-shot expected goals (PSxG) prevented by the goalkeeper and the goals conceded (GA); normalized per 90 minutes.</p>
   </div>
 
-  <h2 style="font-size: 28px;"><a href="http://datamb.football/centrebacks/">Centre-backs</a></h2>
+  <h2 style="font-size: 24px;"><a href="http://datamb.football/radars/">Centrebacks</a></h2>
   <div class="metric">
     <h3 class="metric-title">Passes Completed<em>, per 90</em></h3>
     <p class="metric-definition">The number of passes successfully completed by a centre-back; normalized per 90 minutes.</p>
@@ -410,7 +485,7 @@ header a {
     <p class="metric-definition">Runs with the ball that significantly advance the team's position; normalized per 90 minutes.</p>
   </div>
 
-  <h2 style="font-size: 28px;"><a href="http://datamb.football/fullbacks/">Full-backs</a></h2>
+  <h2 style="font-size: 24px;"><a href="http://datamb.football/radars/">Fullbacks</a></h2>
   <div class="metric">
     <h3 class="metric-title">Cross Accuracy<em>, %</em></h3>
     <p class="metric-definition">The percentage of crosses successfully delivered by a full-back.</p>
@@ -446,7 +521,7 @@ header a {
     <p class="metric-definition">Runs with the ball that significantly advance the team's position; normalized per 90 minutes.</p>
   </div>
 
-  <h2 style="font-size: 28px;"><a href="http://datamb.football/midfielders/">Midfielders</a></h2>
+  <h2 style="font-size: 24px;"><a href="http://datamb.football/radars/">Midfielders</a></h2>
   <div class="metric">
     <h3 class="metric-title">Duels won<em>, %</em></h3>
     <p class="metric-definition">The percentage of duels won by a midfielder.</p>
@@ -482,7 +557,7 @@ header a {
  <p class="metric-definition">Completed passes that help the team significantly advance towards the opponent's goal; normalized per 90 minutes.</p>
   </div>
 
-  <h2 style="font-size: 28px;"><a href="http://datamb.football/wingers/">Wingers</a></h2>
+  <h2 style="font-size: 24px;"><a href="http://datamb.football/radars/">Wingers</a></h2>
   <div class="metric">
     <h3 class="metric-title">Progressive Carries<em>, per 90</em></h3>
      <p class="metric-definition">Runs with the ball that significantly advance the team's position; normalized per 90 minutes.</p>
@@ -518,7 +593,7 @@ header a {
     <p class="metric-definition">Sum of shots, crosses and dribbles; normalized per 90 minutes.</p>
   </div>
 
-  <h2 style="font-size: 28px;"><a href="http://datamb.football/strikers/">Strikers</a></h2>
+  <h2 style="font-size: 24px;"><a href="http://datamb.football/radars/">Strikers</a></h2>
   <div class="metric">
     <h3 class="metric-title">Passes Received<em>, per 90</em></h3>
     <p class="metric-definition">The number of passes received by a striker from his team-mates; normalized per 90 minutes.</p>
