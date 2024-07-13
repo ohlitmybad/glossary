@@ -487,7 +487,9 @@ let dataCSV = xhr.responseText;
   <div class="warning">
   <p><strong>Minutes played :</strong> Minimum 1000 minutes. League only.</p>
     <p><strong>Percentiles :</strong> All the statistics below are then converted into percentiles within the top-seven leagues for each position.</p>
+    <p><strong>Teams :</strong> Team metrics are converted into percentiles within the top-seven leagues and then averaged out. League only.</p>
 </div>
+
 
 
 
@@ -706,6 +708,45 @@ let dataCSV = xhr.responseText;
     <h3 class="metric-title">Offensive Actions<em>, per 90</em></h3>
     <p class="metric-definition">Sum of shots, crosses and dribbles; normalized per 90 minutes.</p>
   </div>
+
+
+<h2 style="font-size: 28px;"><a href="http://datamb.football/teams/">Teams</a></h2>
+
+
+<div class="metric">
+  <h3 class="metric-title">Attacking</h3>
+  <p class="metric-definition">Shots on target per 90, Touches in box per 90, Expected goals per 90.</p>
+</div>
+
+<div class="metric">
+  <h3 class="metric-title">Possession</h3>
+  <p class="metric-definition">Possession %, Positional attacks per 90, Accurate passes per 90, Pass accuracy %, Average passes per possession.</p>
+</div>
+
+<div class="metric">
+  <h3 class="metric-title">Counter</h3>
+  <p class="metric-definition">Counter-attacks per 90.</p>
+</div>
+
+<div class="metric">
+    <h3 class="metric-title">Goals</h3>
+    <p class="metric-definition">Team goals per 90.</p>
+  </div>
+
+<div class="metric">
+  <h3 class="metric-title">Defending/em></h3>
+  <p class="metric-definition">Goals conceded per 90, Shots on target against per 90.</p>
+</div>
+
+<div class="metric">
+  <h3 class="metric-title">Physicality</h3>
+  <p class="metric-definition">Duels won %, Aerial duels won %.</p>
+</div>
+
+<div class="metric">
+  <h3 class="metric-title">Pressing</h3>
+  <p class="metric-definition">PPDA (Passes per defensive action).</p>
+</div>
 
    <footer class="footer">
    
