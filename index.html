@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -1724,7 +1722,7 @@
              
               </div><br><hr class="tool-divider">
             </section>      
-        <br>
+        
         
             <!-- Account & Subscription -->
             <section id="account" class="section">
@@ -1911,16 +1909,30 @@
                     }
                   }
                   
-                  // Calculate the offset (height of fixed header + some padding)
-                  const offset = 85; // Adjust this value based on your header height
-                  const elementPosition = targetElement.getBoundingClientRect().top;
-                  const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-                  // Smooth scroll to element with offset
-                  window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                  });
+                  // Different scroll behavior for mobile and desktop
+                  if (window.innerWidth <= 768) { // Mobile
+                    setTimeout(() => {
+                      // First scroll the element into view
+                      targetElement.scrollIntoView({ behavior: 'smooth' });
+                      
+                      // Then adjust for header offset with a shorter delay and smoother transition
+                      setTimeout(() => {
+                        window.scrollBy({
+                          top: -85,
+                          behavior: 'instant' // Use instant to hide the adjustment
+                        });
+                      }, 400); // Reduced from 500ms
+                    }, 300);
+                  } else { // Desktop
+                    const headerOffset = 85;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                    window.scrollTo({
+                      top: offsetPosition,
+                      behavior: 'smooth'
+                    });
+                  }
                 }
               }
         
